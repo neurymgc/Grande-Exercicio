@@ -1,0 +1,174 @@
+/*class usa '.'
+id usa # */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    background: url(https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2017/01/Equinox.jpg);
+    background-size: 100vmax;
+    color: #070707;
+}
+/*personalização do body, seguindo a seguinte ordem, 
+fonte do texto, peso da fonte, margem externa, fundo "imagem"
+tamanho da imagem do fundo, cor do texto geral*/
+
+body.modo-escuro{
+    color: #f5f5f5;
+}
+/*personalização do texto geral no modo escuro*/
+body.modo-escuro .cartao-exercicio{
+    background-color: #020202b7;
+}
+/*personalização da cor do cartão no modo escuro*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+/*personalização do cabeçalho na seguinte ordem, ''display flexivel'', justificar conteudo,
+margem interna*/
+
+header .logo, 
+header .imagem{
+    width: 7vmax;
+}
+/*personalização das imagens no cabeçalho*/
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/*personalização do botao para mudar o tema*/
+/*hover serve para quando coloca o mouse em cima*/
+
+header .logo:hover,
+header .imagem:hover,
+main .cartao-exercicio:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+/*personalização da animaçao no cabeçalho e conteudo
+principal da pagina web*/
+
+main{
+    padding: 25px;
+}
+/*personalização da margem interna do conteudo principal*/
+
+main .list-exercicio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: center;
+}
+/*personalização da disposiçao dos cartoes na tela*/
+
+
+main .cartao-exercicio{
+    background-color: #f6f8fad2;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+/*personalização do cartao de exercicios*/
+
+main .cartao-exercicio:hover{
+    background-color: #ebe96aaf;
+
+}
+/*personalização do cartao ao passar o mouse acima*/
+
+main .cartao-exercicio .informacoes{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    border: 2px solid #054ff06b;
+    border-radius: 10px;
+}
+/*personalizacao da parte superior do cartao*/
+
+main .cartao-exercicio .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+/*personalização da descricao do cartao*/
+
+main .cartao-exercicio .png{
+    width: 150px;
+    height:120px;
+
+}
+/*personalização das imagens nos cartoes*/
+
+main .cartao-exercicio .tipos{
+    display: flex;
+    gap: 15px;
+}
+/*personalização da informaçao dos tipos de musculos*/
+
+main .cartao-exercicio .tipo{
+    padding: 8px;
+    border-radius: 7px;
+}
+/*personalização da parte dos tipos dos musculos*/
+main .cartao-exercicio #botao{
+    font-weight: 700;
+    border: 2px solid rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(179, 179, 179, 0.548);
+}
+/*personalização do botao para levar ao video fora da pagina*/
+main .cartao-exercicio #botao .link{
+    color: #070707;
+    text-decoration: none;
+}
+/*personalização do texto dentro do botao*/
+.infra{
+    background-color: rgb(27, 73, 27);
+}
+.Reto{
+    background-color: rgb(139, 48, 48);
+}
+.prancha{
+    background-color: rgb(89, 74, 224);
+}
+.remador{
+    background-color: rgb(223, 116, 200);
+}
+.canivete{
+    background-color: rgb(173, 223, 116);
+}
+.flexao{
+    background-color: rgb(116, 223, 214);
+}
+/*personalização das cores para definir qual musculo será trabalhado no exercicio*/
+
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+/*personalização da descriçao dos exercicios*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 219px;
+    padding: 5px;
+    background-color: #070707c4;
+    color: rgb(255, 255, 255);
+}
+/*personalização do rodapé da pagina web*/
