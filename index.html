@@ -1,117 +1,20 @@
 <!DOCTYPE html>
-<!--A declaração de DOCTYPE é uma instrução para o navegador da web que diz em qual versão do HTML a página é escrita.-->
-<html lang="en">
-	<!--O atributo contém uma uma única "tag de idioma" em um formato definido em Tags para identificar linguagens. No caso "inglês"-->
-	<head>
-	<!--A tag head é a tag utilizada para a aba do navegador que esta utilizando.-->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport"  initial-scale="1.0">
-	<!--são elementos que você cria para descrever o conteúdo de uma página para os
-		mecanismos de busca. Assim, elas fornecem dados, como título ou breve resumo sobre o assunto abordado,
-		para programas externos.-->
-	<title>Grande Exercicio</title>
-	<link rel="shortcut icon" href="src/imagens/activity.svg" type="image/x-icon" class="favicon">
-	<link rel="stylesheet" href="src/css/reset.css">
-	<link rel="stylesheet" href="src/css/estilos.css">]
-	<!--As tags "link" servem para criar uma ligação entre sua pagina html com a personalização do css.-->
-	</head>
-	<body>
-		<header>
-			<!--Adiciona um cabeçalho a página web.	-->
-			<a href="#">
-				<img src="./src/imagens/icon.png" alt="biceps" class="logo">
-			</a>
-			<!--tag utilizada para levar o usuario a uma pagina externa, quando o atributo for "href="#"" 
-				leva o usuario a pagina inicial "index.html". -->
-			<button id="botao-alterar-tema">
-				<img src="src/imagens/sol-quente.webp" alt="imagem do sol" class="imagem">
-			</button>
-			<!--botao que faz ligação com o javascript para mudar o tema da pagina para claro ou escuro.-->
-		</header>
-		<main>
-			<ul class="list-exercicio">
-				<!--utilizado para fazer uma lista desordenada "unordered list".-->
-				<li class="cartao-exercicio">
-					<!--utilizado para criar um item na lista, seja ela ordenada ou desordenada "list item".-->
-					<div class="informacoes">
-						<!--utilizada para criar uma "caixa" de informações.-->
-						<span>Abdominal infra</span>
-						<!--serve para que você seja capaz de representar elementos visuais destacados de um todo e não representa nada por natureza.
-						No caso, titulo do cartão.-->
-					</div>
-					<img src="./src/imagens/5_infra.webp" alt="infra" class="png">
-					<!--tag utilizada para adicionar uma imagem ou gif a pagina web.-->
-					<ul class="tipos">
-						<!--utilizado para fazer uma lista desordenada "unordered list".-->
-						<li class="tipo infra">Infra</li>
-						<!--utilizado para criar um item na lista, seja ela ordenada ou desordenada "list item"-->
-					</ul>
-					<p class="descricao">O infra ativará seus principais músculos abdominais, incluindo os oblíquos externos, localizados nas laterais do abdômen. Além disso, ao fazer o abdominal reverso, você estará criando mais força e resistência, pois os músculos trabalham em alta intensidade durante toda a duração do movimento.</p>
-					<button id="botao"><a href="https://www.youtube.com/watch?v=-l1IHdexcA0" target="_blank" class="link">Aprenda Como Realizar</a></button>
-					<!--esta tag representa o botao que leva o usuario a um video ensinando a forma correta de fazer cada exercicio.-->
-				</li>
-				<li class="cartao-exercicio">
-					<div class="informacoes">
-						<span>Abdominal Tradicional</span>
-					</div>
-					<img src="./src/imagens/basico.png" alt="basico" class="png">
-					<ul class="tipos">
-						<li class="tipo Reto">Reto Abdominal</li>
-					</ul>
-					<p class="descricao"> Como executar o exercício abdominal tradicional de forma correta. Os exercícios abdominais são de extrema importância para o seu corpo. Estes exercícios promovem diversos benefícios, entre eles: estabilidade da coluna lombar, melhora da postura, da respiração além da estabilidade e o equilíbrio corporal.</p>
-					<button id="botao"><a href="https://www.youtube.com/watch?v=DkVcmkLNjRs" target="_blank" class="link">Aprenda Como Realizar</a></button>
-				</li>
-				<li class="cartao-exercicio">
-					<div class="informacoes">
-						<span>Abdominal Prancha </span>
-					</div>
-					<img src="./src/imagens/prancha.webp" alt="prancha" class="png">
-					<ul class="tipos">
-						<li class="tipo prancha">Obliquo Externo</li>
-					</ul>
-					<p class="descricao"> Melhoria da tonificação muscular e da performance - Prancha é o exercício ideal para trabalhar a musculatura abdominal, pois a actividade envolve todos os principais grupos musculares, incluindo o transverso abdominal, o recto abdominal, músculo oblíquo externo e os glúteos.</p>
-					<button id="botao"><a href="https://www.youtube.com/watch?v=WX8GnBqrBSM" target="_blank" class="link">Aprenda Como Realizar</a></button>
-				</li>
-				<li class="cartao-exercicio">
-					<div class="informacoes">
-						<span>Abdominal Remador</span>
-					</div>
-					<img src="./src/imagens/5_remador.webp" alt="remador" class="png">
-					<ul class="tipos">
-						<li class="tipo remador">Adutores</li>
-					</ul>
-					<p class="descricao"> Conhecido também como abdominal canivete, é uma atividade que trabalha toda a musculatura do abdômen. Entenda a seguir como executar e sua importância no treino!</p>
-					<button id="botao"><a href="https://www.youtube.com/watch?v=xvS-hw6dEGI" target="_blank" class="link">Aprenda Como Realizar</a></button>
-				</li>
-				<li class="cartao-exercicio">
-					<div class="informacoes">
-						<span>Abdominal Canivete</span>
-					</div>
-					<img src="./src/imagens/canivete.png" alt="abs canivete" class="png">
-					<ul class="tipos">
-						<li class="tipo canivete">Flexores de Quadril</li>
-					</ul>
-					<p class="descricao"> Abdominal Canivete e meio canivete é uma excelente variação de exercício para trabalhar de forma isométrica Reto abdominal e Oblíquos e, os músculos Flexores do Quadril de forma dinâmica. Existem vários exercícios que podem ser prescritos para trabalhar a musculatura da região abdominal.</p>
-					<button id="botao"><a href="https://www.youtube.com/watch?v=cm6BadT-cLk" target="_blank" class="link">Aprenda Como Realizar</a></button>
-				</li>
-				<li class="cartao-exercicio">
-					<div class="informacoes">
-						<span>Flexão</span>
-					</div>
-					<img src="./src/imagens/2548536.png" alt="flexão" class="png">
-					<ul class="tipos">
-						<li class="tipo flexao">Triceps</li>
-					</ul>
-					<p class="descricao"> Quando você faz uma flexão de braço, trabalha os músculos do peitoral, tríceps, ombros, abdômen, lombar e, até mesmo, dos membros inferiores. Uma atividade completa para dar um gás no seu treino!</p>
-					<button id="botao"><a href="https://www.youtube.com/watch?v=QUrO2j-hkC4" target="_blank" class="link">Aprenda Como Realizar</a></button>
-				</li>
-			</ul>
-		</main>
-		<footer>
-			<p>Trabalho executado por alunos do Centro Universitário Estácio de Sá : Neurivania,...</p>
-		</footer>
-		<script src="src/js/index.js"></script>
-		<!--é usado para incluir ou referenciar um script executável. Conteúdo de metadados, Fluxo de conteúdo, Conteúdo fraseado.-->
-	</body>
+<head>
+    <link rel="shortcut icon" href="src/css/activity.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+<title>Login</title>
+</head>
+<body>
+    <section class="area-login">
+        <div class="login">
+            <form method="POST">
+                <input type="text" name="nome" placeholder="nome do usuario" autofocus>
+                <input type="password" nome="senha" placeholder="sua senha" autofocus>
+                <button>
+                    <a href="principal.html"> Entrar</a></button>      
+            </form>
+        <p>Ainda não tem conta?<a href="#">Criar conta</a></p>
+        </div>  
+    ,</section>
+</body>
 </html>
